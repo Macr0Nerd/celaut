@@ -47,14 +47,14 @@ namespace Conway {
      * Play Conway's Game of Life using a prebuilt board.
      * @param board A 2-Dimensional vector containing the Cell struct.
      */
-    [[noreturn]] void play(std::vector<std::vector<Conway::Cell>> &board);
+    void play(std::vector<std::vector<Conway::Cell>> &board);
 
     /**
      * Play Conway's Game of Life with a fresh board with a randomized midsection.
      * @param x Height of the board (length of outer vector).
      * @param y Width of the board (length of inner vector).
      */
-    [[noreturn]] void play(int x, int y);
+    void play(int x, int y);
 }
 
 /**
