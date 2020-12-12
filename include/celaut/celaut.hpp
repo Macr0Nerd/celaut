@@ -9,8 +9,20 @@
 template<class CellProperties>
 class CelAut {
 public:
+    /**
+     * The template function for updating the board. Game logic will go here.
+     * @param board A 2-Dimensional array with the provided struct in each cell.
+     * @return The success of the update.
+     */
     static int update(std::vector<std::vector<CellProperties>> &board);
 
+    /**
+     * Function to grab all the cells surrounding a cell given the coordinates.
+     * @param board A 2-Dimensional array with the provided struct in each cell.
+     * @param x The x-coordinate (outer vector).
+     * @param y The y-coordinate (inner vector).
+     * @return A vector with a copy of all the surrounding cells.
+     */
     static std::vector<CellProperties> getAround(const std::vector<std::vector<CellProperties>> &board, int x, int y) {
         std::vector<CellProperties> list, tmp;
 
