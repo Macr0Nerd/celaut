@@ -26,7 +26,7 @@ namespace Conway {
     };
 
     /**
-     * Print's out the board to console.
+     * Prints out the board to console.
      * @param board A 2-Dimensional vector containing the Cell struct.
      */
     static void printBoard(const std::vector<std::vector<Cell>> &board) {
